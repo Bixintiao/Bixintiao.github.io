@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-23T07:24:03.314Z</updated>
+  <updated>2017-03-23T07:28:49.734Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/23/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
     <id>http://yoursite.com/2017/03/23/博客说明/</id>
     <published>2017-03-23T07:02:44.000Z</published>
-    <updated>2017-03-23T07:24:03.314Z</updated>
+    <updated>2017-03-23T07:28:49.734Z</updated>
     
     <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github(<a href="https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。" target="_blank" rel="external">https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。</a></p>
 <h2 id="个人说明"><a href="#个人说明" class="headerlink" title="个人说明"></a>个人说明</h2><p>博主是个不折不扣的计算机专业的[小小小白]，马上要毕业了却发现自己什么都不会，一部分责任在学校，但是更多的是在于自己。业精于勤，荒于嬉。自从大三的实习开始认识了很多大牛和大表哥，才发现自己的世界是多么的狭小，然后不断努力，不断努力。但是咸鱼毕竟是一条咸鱼，即使翻身还是一条咸鱼。再学习的过程中感觉自己越来越low B，学的越多懂得越少，有点无力，甚至晚上还不断做梦，真是亚历山大啊。但是我不甘愿如此，我觉得年轻就是资本，即使啥都不会。我大概会总结了一下接下去的方向</p>
@@ -32,8 +32,10 @@
     
     </summary>
     
+      <category term="杂类" scheme="http://yoursite.com/categories/%E6%9D%82%E7%B1%BB/"/>
     
-      <category term="个人杂类" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E6%9D%82%E7%B1%BB/"/>
+    
+      <category term="个人" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA/"/>
     
   </entry>
   
