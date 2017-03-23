@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Pancheng&#39;Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-23T07:24:03.314Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Pan Cheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客说明</title>
+    <link href="http://yoursite.com/2017/03/23/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2017/03/23/博客说明/</id>
+    <published>2017-03-23T07:02:44.000Z</published>
+    <updated>2017-03-23T07:24:03.314Z</updated>
+    
+    <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github(<a href="https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。" target="_blank" rel="external">https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。</a></p>
+<h2 id="个人说明"><a href="#个人说明" class="headerlink" title="个人说明"></a>个人说明</h2><p>博主是个不折不扣的计算机专业的[小小小白]，马上要毕业了却发现自己什么都不会，一部分责任在学校，但是更多的是在于自己。业精于勤，荒于嬉。自从大三的实习开始认识了很多大牛和大表哥，才发现自己的世界是多么的狭小，然后不断努力，不断努力。但是咸鱼毕竟是一条咸鱼，即使翻身还是一条咸鱼。再学习的过程中感觉自己越来越low B，学的越多懂得越少，有点无力，甚至晚上还不断做梦，真是亚历山大啊。但是我不甘愿如此，我觉得年轻就是资本，即使啥都不会。我大概会总结了一下接下去的方向</p>
+<h2 id="取证类"><a href="#取证类" class="headerlink" title="取证类"></a>取证类</h2><h3 id="windows取证"><a href="#windows取证" class="headerlink" title="windows取证"></a>windows取证</h3><h3 id="linux取证"><a href="#linux取证" class="headerlink" title="linux取证"></a>linux取证</h3><h3 id="android取证"><a href="#android取证" class="headerlink" title="android取证"></a>android取证</h3><h3 id="ios取证"><a href="#ios取证" class="headerlink" title="ios取证"></a>ios取证</h3><h3 id="文件修复"><a href="#文件修复" class="headerlink" title="文件修复"></a>文件修复</h3><h3 id="密码破解"><a href="#密码破解" class="headerlink" title="密码破解"></a>密码破解</h3><h2 id="CTF类"><a href="#CTF类" class="headerlink" title="CTF类"></a>CTF类</h2><h3 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h3><h3 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h3><h3 id="web"><a href="#web" class="headerlink" title="web"></a>web</h3><h3 id="reserve"><a href="#reserve" class="headerlink" title="reserve"></a>reserve</h3><h3 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h3><h3 id="其他杂类（学到再加）"><a href="#其他杂类（学到再加）" class="headerlink" title="其他杂类（学到再加）"></a>其他杂类（<strong>学到再加</strong>）</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搞了半天终于搭好了hexo+github(&lt;a href=&quot;https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。&quot; target=&quot;_blank&quot; rel=&quot;exter
+    
+    </summary>
+    
+    
+      <category term="个人杂类" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E6%9D%82%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://yoursite.com/2017/03/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2017/03/23/第一篇文章/</id>
+    <published>2017-03-23T05:43:52.000Z</published>
+    <updated>2017-03-23T05:43:52.518Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/03/23/hello-world/"/>
+    <id>http://yoursite.com/2017/03/23/hello-world/</id>
+    <published>2017-03-23T02:46:07.567Z</published>
+    <updated>2017-03-23T02:46:07.567Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
