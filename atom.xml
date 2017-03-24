@@ -107,9 +107,10 @@ cd john-1
     <link href="http://yoursite.com/2017/03/24/%E8%B7%9F%E8%A1%A8%E5%93%A5%E5%AD%A6%E7%9A%84%E7%88%86%E7%A0%B4linux%20shadow/"/>
     <id>http://yoursite.com/2017/03/24/跟表哥学的爆破linux shadow/</id>
     <published>2017-03-24T01:18:20.000Z</published>
-    <updated>2017-03-24T03:24:00.372Z</updated>
+    <updated>2017-03-24T07:43:36.728Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="0x01-etc-passwd和-etc-shadow"><a href="#0x01-etc-passwd和-etc-shadow" class="headerlink" title="0x01 /etc/passwd和/etc/shadow"></a>0x01 /etc/passwd和/etc/shadow</h1><p>帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的啦～</p>
+    <content type="html"><![CDATA[<p><strong>这个操作的前提是拿到root权限，至于root权限可以参考单用户绕过，具体步骤改天出</strong></p>
+<h1 id="0x01-etc-passwd和-etc-shadow"><a href="#0x01-etc-passwd和-etc-shadow" class="headerlink" title="0x01 /etc/passwd和/etc/shadow"></a>0x01 /etc/passwd和/etc/shadow</h1><p>帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的啦～</p>
 <h2 id="etc-passwd"><a href="#etc-passwd" class="headerlink" title="/etc/passwd"></a>/etc/passwd</h2><p>这个档案的构造是这样的：每一行都代表一个帐号， 有几行就代表有几个帐号在你的系统中！不过需要特别留意的是， 里头很多帐号本来就是系统中必须要的，我们可以简称他为系统帐号， 例如 bin, daemon, adm, nobody 等等，这些帐号是系统正常运作时所需要的，请不要随意的杀掉他呢！ 这个档案的内容有点像这样：</p>
 <pre><code>root:x:0:0:root:/root:/bin/bash
 
@@ -240,7 +241,8 @@ john --show --user：textuser password
     
     <summary type="html">
     
-      &lt;h1 id=&quot;0x01-etc-passwd和-etc-shadow&quot;&gt;&lt;a href=&quot;#0x01-etc-passwd和-etc-shadow&quot; class=&quot;headerlink&quot; title=&quot;0x01 /etc/passwd和/etc/shadow&quot;&gt;&lt;/a&gt;0x01
+      &lt;p&gt;&lt;strong&gt;这个操作的前提是拿到root权限，至于root权限可以参考单用户绕过，具体步骤改天出&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;0x01-etc-passwd和-etc-shadow&quot;&gt;&lt;a href=&quot;#0x01-etc-passwd和-etc-shado
     
     </summary>
     
