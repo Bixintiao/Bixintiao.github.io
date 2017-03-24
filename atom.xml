@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-24T03:24:00.372Z</updated>
+  <updated>2017-03-24T07:42:12.775Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,93 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>John用法</title>
+    <link href="http://yoursite.com/2017/03/24/John%E7%94%A8%E6%B3%95/"/>
+    <id>http://yoursite.com/2017/03/24/John用法/</id>
+    <published>2017-03-24T07:37:20.000Z</published>
+    <updated>2017-03-24T07:42:12.775Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>#cd /tmp   </li>
+</ol>
+<pre><code>wget http://www.openwall.com/john/g/john-1.7.4.2.tar.gz
+
+tar -zxvf john-1.7.4.2.tar.gz
+
+cd john-1.7.4.2
+
+cd src
+
+make linux-x86-any-a.out
+</code></pre><p>或者使用yum install john<br>2：unshadow /etc/passwd /etc/shadow &gt;passwd.txt (注意只有root才能执行unshadow，<br>                                                                        因为只有root才能读取/etc/shadow。）<br>3：chmod 600 passwd.txt<br>4: john passwd.txt<br>此外，如果已经破解成功，则可以查看john.pot来查看。<br>＃john -show passwd.txt<br>＃john -show -users:yujs passwd.txt<br>获得指定用户的密码。<br>John the Ripper的四种破解模式</p>
+<p>「字典档」破解模式（Wordlist Mode）<br>这在John所支援的破解模式中是最简单的一种，你要做的唯一工作就是告诉John字典档在哪（字典档就是文字档，内容每行一个单字代表试验的密码），好 让它可以取出破解。在「字典档」破解模式里可以使用「字词变化」功能，来让这些规则自动的套用在每个读入的单字中，以增加破解的机率。</p>
+<p>「简单」破解模式（Single Crack）<br>「简单」破解模式是专门针对「使用帐号当作密码」的懒人所设计的；所谓「使用帐号当作密码」的意思是，如果一个使用者帐号是「john」，它的密码也取为 「john」。在「简单」破解模式里john会拿密码档内的「帐号」栏位等相关资讯来破解密码，并且使用多种「字词变化」的规则套用到的「帐号」内，以增 加破解的机率。如帐号「john」，它会尝试用「john」、「john0」、「njoh」、「j0hn」….等规则变化来尝试密码的可能性。</p>
+<p>「增强」破解模式（Incremental Mode）<br>这是John里面功能最强大的破解模式，它会自动尝试所有可能的字元组合，然后当作密码来破解。这个破解模式所需要的时间非常冗长，因为要尝试组合字元是 非常耗费时间的，所以John才会定义一些「字元频率表」（character frequencytables）来帮助破解。简言之这个破解方法就是「暴力法」，把所有可能的密码组合都测试一次，来得到正确的结果。</p>
+<p>「外挂模组」破解模式（External Mode）<br>这个破解模式是让使用者可以自己用C语言写一些「破解模组程式」，然后挂在John里面来使用。其实所谓的「破解模组程式」就是一些用C语言设计好的副函 示，然后它的功能就是产生出一些单字来让John尝试破解。而</p>
+<p>在执行John程式时，它在载入这些「破解模组程式」时会自动编译这些C语言副函示然后来使用。 （真伟大，光这点就让笔者佩服五体投地）</p>
+<p>John the Ripper命令列参数说明</p>
+<p>【命令列指令】</p>
+<p>john [-命令列参数] [密码档档名]</p>
+<p>【命令列参数】</p>
+<p>参数：-single<br>说明：使用「简单」（Single Crack）破解模式解密，主要是根据使用者的「帐号」产生变化来猜测解密，其变化规则记录在JOHN.INI档案的 [List.Rules:Single]区域内。 （稍后会再介绍）</p>
+<pre><code>范例：john -single passwd
+</code></pre><p>参数：-wordfile:[字典档档名] -stdin</p>
+<p>说明：使用「字典档」破解模式解密，由字典档内读取单字来破解；或是可以加上-stdin参数，代表由键盘输入单字来破解。</p>
+<pre><code>范例：john -wordfile:bigdict.dic passwd
+</code></pre><p>参数：-rules<br>说明：在「字典档」破解模式下，开启字词规则变化功能，如「字典档」读入单字cook，则开启字词变化下，程式可能会尝试cook、c00k、 cooker、cook0…等其它字词。详细变化规则记录在JOHN.INI档案的[List.Rules:Wordlist]区域内。（稍后会再介绍）</p>
+<pre><code>范例：john -wordfile:bigdict.dic -rules passw
+</code></pre><p>参数：-incremental[:模式名称]（参数也可以简写成-i[:模式名称]）<br>说明：使用「增强」破解模式解密，就是组合所有可能的字元当作密码来破解。在JOHN.INI档案内的[Incremental:<strong>*</strong>]区域里定义 好许多的模式名称，可以指定使用哪一个模式来破解。 （稍后会再介绍）</p>
+<pre><code>范例：john -i:all passwd
+</code></pre><p>参数：-external:[模组名称]<br>说明：使用「外挂模组」破解模式解密，使用者可以自己撰写额外的「破解模组程式」。 「破解模组程式」是记录在JOHN.INI档案内的[List.External:<strong>**</strong>]区域内。</p>
+<pre><code>范例：john -external:double passwd
+</code></pre><p>参数：-stdout[:LENGTH]<br>说明：这个选项跟破解没有任何关系，只是单纯显示John所产生出来的单字到萤幕上。</p>
+<pre><code>范例：john –i:all –stdout
+</code></pre><p>参数：-restore[:回复档案名称]<br>说明：继续上次中断的解密工作。 John在执行破解密码工作时，可以按下＜CTRLC＞键中断工作，而当前的解密进度情形会被存放在一个名为「restore」的档案内。而使用 「-restore」参数，可以从「restore」档案内读取上一次破解时候中断的位置，然后接下去继续破解。</p>
+<pre><code>范例：john –restore
+</code></pre><p>参数：-session[:记录档档名]<br>说明：这个选项是让你设定目前工作记录档（session file）的档名。所谓的工作记录档就是可以用「-restore」参数回复工作的档案。另外，在使用John做多工破解工作时，使用 「-session」参数可以为每个工作设定各别的记录档，而不会混在一起。</p>
+<pre><code>范例：john –wordfile:bigdict.dic –session:work1 passwd
+</code></pre><p>参数：-status[:记录档档名]<br>说明：显示工作记录档里面所记录的工作状态。</p>
+<pre><code>范例：john –status:restore
+</code></pre><p>参数：-makechars:[档名]<br>说明：制作「字元频率表」。这个选项会以目前已破解出的密码为基础，来产生「字元频率表」（注：John会把已破解出的密码记录在JOHN.POT档案 内，）。如果所指定档名的档案已经存在的话，会被覆写。此选项产生出来的档案，可以用在「增强」破解模式上。</p>
+<pre><code>范例：john –makechars:ownchars
+</code></pre><p>参数：-show<br>说明：显示目前已经破解出的密码。因为JOHN.POT档案内并不储存「帐号」资料，所以使用时你应该同时输入相对应的密码档。</p>
+<pre><code>范例：john –show passwd
+</code></pre><p>参数：-test<br>说明：测试目前机器执行John各类型密码破解时的速度。</p>
+<pre><code>范例：john –test
+</code></pre><p>参数：-users:[-]LOGIN｜UID [,..]<br>说明：只破解某个「帐号」的密码，如只针对root或拥有root权利UID=0的使用者。 （若在LOGIN｜UID名称前加上“－”符号则是相反，表示不要破解这个「帐号」的密码）</p>
+<pre><code>范例：john –i:all –users:root passwd
+</code></pre><p>参数：-groups:[-]UID[,..]<br>说明：只破解某个「群组」内用户的密码。 （若在UID名称前加上“－”符号则是相反，表示不要破解这个「群组」内用户的密码） </p>
+<pre><code>范例：john –i:all –groups:100 
+</code></pre><p>参数：-shells:[-]SHELL [,..]<br>说明：和上面两个参数一样，这个选项是只针对所有可以使用shell的用户进行破解密码工作，对其它用户不予理会。（若在SHELL名称前加上“－”符号 则是相反，表示不要破解可以使用这个SHELL的用户的密码）。指定SHELL时，你可以省略绝对路径，如参数「-shells:csh」就会包含 「/bin/csh」或「/usr/bin/csh」等路径，但如果你指定的是「-shells:/bin/csh」则只会包含「/bin/csh」这个 SHELL名称。</p>
+<pre><code>范例：john –i:all –shells:csh passwd
+</code></pre><p>参数：-salts:[-]COUNT<br>说明：只破解「salts」大于「COUNT」的帐号的密码，可以使你得到较佳破解速度（所谓「salts」是指UNIX拿来作为「密码」编码基础的单 位）。举例来说，你可以先只破解某部分用户的密码「-salts:2」来获得较佳的速度，然后有时间时才破解剩余用户的密码「-salts:-2」。</p>
+<pre><code>范例：john –i:all –salts:2 passwd
+</code></pre><p>参数：-format:NAME与-savemem:LEVEL<br>说明：这两个参数是有关John内部运作的设定，跟破解本身没有直接关系，所以省略不介绍。</p>
+<p>最常用的两个：</p>
+<pre><code>john -w:all.txt passwd.txt
+john -show passwd.txt &gt;/pass.txt 把解密结果保存到pass.txt里面。
+</code></pre><p>字典可以到<a href="http://www.milw0rm.com/上在下载" target="_blank" rel="external">http://www.milw0rm.com/上在下载</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;#cd /tmp   &lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;wget http://www.openwall.com/john/g/john-1.7.4.2.tar.gz
+
+tar -zxvf john-1.7.4.2.tar.gz
+
+cd john-1
+    
+    </summary>
+    
+    
+      <category term="linux取证" scheme="http://yoursite.com/tags/linux%E5%8F%96%E8%AF%81/"/>
+    
+  </entry>
   
   <entry>
     <title>跟表哥学的爆破linux shadow</title>
