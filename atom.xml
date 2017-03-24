@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-23T07:28:49.734Z</updated>
+  <updated>2017-03-24T03:18:15.067Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,67 +16,158 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客说明</title>
-    <link href="http://yoursite.com/2017/03/23/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
-    <id>http://yoursite.com/2017/03/23/博客说明/</id>
-    <published>2017-03-23T07:02:44.000Z</published>
-    <updated>2017-03-23T07:28:49.734Z</updated>
+    <title>跟表哥学的爆破linux shadow</title>
+    <link href="http://yoursite.com/2017/03/24/%E8%B7%9F%E8%A1%A8%E5%93%A5%E5%AD%A6%E7%9A%84%E7%88%86%E7%A0%B4linux%20shadow/"/>
+    <id>http://yoursite.com/2017/03/24/跟表哥学的爆破linux shadow/</id>
+    <published>2017-03-24T01:18:20.000Z</published>
+    <updated>2017-03-24T03:18:15.067Z</updated>
     
-    <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github(<a href="https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。" target="_blank" rel="external">https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。</a></p>
-<h2 id="个人说明"><a href="#个人说明" class="headerlink" title="个人说明"></a>个人说明</h2><p>博主是个不折不扣的计算机专业的[小小小白]，马上要毕业了却发现自己什么都不会，一部分责任在学校，但是更多的是在于自己。业精于勤，荒于嬉。自从大三的实习开始认识了很多大牛和大表哥，才发现自己的世界是多么的狭小，然后不断努力，不断努力。但是咸鱼毕竟是一条咸鱼，即使翻身还是一条咸鱼。再学习的过程中感觉自己越来越low B，学的越多懂得越少，有点无力，甚至晚上还不断做梦，真是亚历山大啊。但是我不甘愿如此，我觉得年轻就是资本，即使啥都不会。我大概会总结了一下接下去的方向</p>
-<h2 id="取证类"><a href="#取证类" class="headerlink" title="取证类"></a>取证类</h2><h3 id="windows取证"><a href="#windows取证" class="headerlink" title="windows取证"></a>windows取证</h3><h3 id="linux取证"><a href="#linux取证" class="headerlink" title="linux取证"></a>linux取证</h3><h3 id="android取证"><a href="#android取证" class="headerlink" title="android取证"></a>android取证</h3><h3 id="ios取证"><a href="#ios取证" class="headerlink" title="ios取证"></a>ios取证</h3><h3 id="文件修复"><a href="#文件修复" class="headerlink" title="文件修复"></a>文件修复</h3><h3 id="密码破解"><a href="#密码破解" class="headerlink" title="密码破解"></a>密码破解</h3><h2 id="CTF类"><a href="#CTF类" class="headerlink" title="CTF类"></a>CTF类</h2><h3 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h3><h3 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h3><h3 id="web"><a href="#web" class="headerlink" title="web"></a>web</h3><h3 id="reserve"><a href="#reserve" class="headerlink" title="reserve"></a>reserve</h3><h3 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h3><h3 id="其他杂类（学到再加）"><a href="#其他杂类（学到再加）" class="headerlink" title="其他杂类（学到再加）"></a>其他杂类（<strong>学到再加</strong>）</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;搞了半天终于搭好了hexo+github(&lt;a href=&quot;https://github.com/Bixintiao)的个人博客。个人记性不好，以后在这里([eviadmin.top])将学习的内容记录一下，方便查找。&quot; target=&quot;_blank&quot; rel=&quot;exter
-    
-    </summary>
-    
-      <category term="杂类" scheme="http://yoursite.com/categories/%E6%9D%82%E7%B1%BB/"/>
-    
-    
-      <category term="个人" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一篇文章</title>
-    <link href="http://yoursite.com/2017/03/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2017/03/23/第一篇文章/</id>
-    <published>2017-03-23T05:43:52.000Z</published>
-    <updated>2017-03-23T05:43:52.518Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/03/23/hello-world/"/>
-    <id>http://yoursite.com/2017/03/23/hello-world/</id>
-    <published>2017-03-23T02:46:07.567Z</published>
-    <updated>2017-03-23T02:46:07.567Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h1 id="0x01-etc-passwd和-etc-shadow"><a href="#0x01-etc-passwd和-etc-shadow" class="headerlink" title="0x01 /etc/passwd和/etc/shadow"></a>0x01 /etc/passwd和/etc/shadow</h1><p>帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的啦～</p>
+<h2 id="etc-passwd"><a href="#etc-passwd" class="headerlink" title="/etc/passwd"></a>/etc/passwd</h2><p>这个档案的构造是这样的：每一行都代表一个帐号， 有几行就代表有几个帐号在你的系统中！不过需要特别留意的是， 里头很多帐号本来就是系统中必须要的，我们可以简称他为系统帐号， 例如 bin, daemon, adm, nobody 等等，这些帐号是系统正常运作时所需要的，请不要随意的杀掉他呢！ 这个档案的内容有点像这样：</p>
+<pre><code>root:x:0:0:root:/root:/bin/bash
+
+bin:x:1:1:bin:/bin:/sbin/nologin
+
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+</code></pre><p>我们先来看一下每个 Linux 系统都会有的第一行，就是 root 这个系统管理员那一行好了， 你可以明显的看出来，每一行使用‘:’分隔开，共有七个咚咚，分别是：</p>
+<ol>
+<li>帐号名称：就是帐号名称啦！对应 UID 用的！例如 root 就是预设的系统管理员的帐号名称；</li>
+<li>密码：早期的 Unix 系统的密码是放在这个档案中的， 但是因为这个档案的特性是所有的程序都能够读取，所以，这样一来很容易造成资料的被窃取， 因此后来就将这个栏位的密码资料给他改放到 /etc/shadow 中了，关于 /etc/shadow 这一部份等一下再说。而这里你会看到一个 x ，呵呵！别担心，这表示密码已经被移动到 shadow 这个加密过后的档案啰；</li>
+<li>UID：这个就是使用者识别码 (ID) 啰！通常 Linux 对于 UID 有几个限制需要说给您瞭解一下：<br>id 范围   该 ID 使用者特性0。当 UID 是 0 时，代表这个帐号是‘系统管理员’！所以当你要作另一个系统管理员帐号时， 你可以将该帐号的 UID 改成 0 即可；这也就是说，一部系统上面的系统管理员不见得只有 root 喔！ 不过，不很建议有多个帐号的 UID 是 0 啦～<br>1~499保留给系统使用的 ID，其实 1~65534 之间的帐号并没有不同， 也就是除了 0 之外，其他的 UID 并没有不一样，预设 500 以下给系统作为保留帐号只是一个习惯。这 样的好处是，以有名的 DNS 伺服器的启动服务‘ named ’为例，这个程式的预设所有人 named 的帐号 UID 是 25 ，当有其他的帐号同样是 25 时，很可能会造成系统的一些小问题！为了杜绝这样的问题，建议保留 500 以前的 UID 给系统吧！不过，一般来说， 1~99 会保留给系统预设的帐号，另外 100~499 则保留给一些服务来使用。500~65535   给一般使用者用的。事实上，目前的 linux 核心 (2.6.x 版)已经可以支援到 4294967295 (2^32-1) 这么大的 UID 号码喔！上面这样说明可以瞭解了吗？是的， UID 为 0 的时候，就是 root 呦！所以请特别留意一下你的 /etc/passwd 档案！</li>
+<li>GID：这个与 /etc/group 有关！其实 /etc/group 的观念与 /etc/passwd 差不多，只是他是用来规范 group 的而已！</li>
+<li>使用者资讯说明栏：这个栏位基本上并没有什么重要用途， 只是用来解释这个帐号的意义而已！不过，如果您提供使用 finger 的功能时， 这个栏位可以提供很多的讯息呢！底下的 chfn 可以解释一下啰！</li>
+<li>家目录：这是使用者的家目录，以上面为例， root 的家目录在 /root ，所以当 root 登入之后，就会立刻跑到 /root 里头啦！呵呵！ 如果你有个帐号的使用空间特别的大，你想要将该帐号的家目录移动到其他的硬碟去， 没有错！可以在这里进行修改呦！预设的使用者家目录在 /home/yourIDname</li>
+<li>Shell：所谓的 shell 是用来沟通人类下达的指令与硬体之间真正动作的界面！我们通常使用 /bin/bash 这个 shell 来进行指令的下达！嘿嘿！发现了吧？我们在 bash 章节里面提到很多次，登入 Linux 时为何预设是 bash 呢？就是这里设定的啦～ 这里比较需要注意的是，有一个 shell 可以用来替代成让帐号无法登入的指令！那就是 /sbin/nologin 这个东西！这也可以用来制作纯 pop 邮件帐号者的资料呢！</li>
+<li><h2 id="etc-shadow"><a href="#etc-shadow" class="headerlink" title="/etc/shadow"></a>/etc/shadow</h2><p>上面约略提到，由于每个程序都需要取得 uid 与 gid 来判断权限的问题，所以， /etc/passwd 的权限必须要设定成为 -rw-r–r– 这样的权限，在这样的情况下， 使用者的密码不就任何人都可以看到吗？即使这个档案内的密码栏是加密的， 坏心肠的朋友也可能利用暴力破解法去 try and error 找出您的密码资料……<br>因为这样的关系，所以后来发展出将密码移动到 /etc/shadow 这个档案分隔开来的技术， 而且还加入很多的密码限制参数在 /etc/shadow 里头呢！我们先来瞭解一下这个档案的构造吧！ 我的 /etc/shadow 档案有点像这样：</p>
+<p> root:$1$i9Ejldjfjio389u9sjl$jljsoi45QE/:12959:0:99999:7:::</p>
+<p> bin:*:12959:0:99999:7:::</p>
+<p> daemon:*:12959:0:99999:7:::</p>
+<p> adm:*:12959:0:99999:7:::</p>
+</li>
+</ol>
+<p>　　基本上， shadow 同样以‘:’作为分隔符号，如果数一数，会发现共有九个栏位啊， 这九个栏位的用途是这样的：</p>
+<ol>
+<li>帐号名称：由于密码也需要与帐号对应啊～因此， 这个档案的第一栏就是帐号，必须要与 /etc/passwd 相同才行！</li>
+<li>密码：这个才是真正的密码，而且是 经过编码过的密码啦！ 你只会看到有一些特殊符号的字母就是了！需要特别留意的是， 虽然这些加密过的密码很难被解出来，但是‘很难’不等于‘不会’，所以， 这个档案的预设属性是‘-rw——-’或者是‘-r——–’，亦即只有 root 才可以读写就是了！你得随时注意，不要不小心更动了这个档案的属性呢！另外， 如果是在密码栏的第一个字元为‘ <em> ’或者是‘ ! ’，表示这个帐号并不会被用来登入的意思。 所以万一哪一天你的某个使用者不乖时，可以先在这个档案中，将他的密码栏位的最前面多加一个 </em> ！嘿嘿！他就无法使用该帐号啰！直到他变乖了，再给他启用啊！</li>
+<li>最近更动密码的日期：这个栏位记录了‘更动密码的那一天’的日期， 不过，很奇怪呀！在我的例子中怎么会是 12959 呢？呵呵，这个是因为计算 Linux 日期的时间是以 1970 年 1 月 1 日作为 1 ，而 1971 年 1 月 1 日则为 366 啦！ 所以这个日期是累加的呢！得注意一下这个资料呦！那么最近的 2005 年 1 月 1 日就是 12784 啦，瞭解了吗？</li>
+<li>密码不可被更动的天数： 第四个栏位记录了这个帐号的密码需要经过几天才可以被变更！如果是 0 的话， 表示密码随时可以更动的意思。这的限制是为了怕密码被某些人一改再改而设计的！如果设定为 20 天的话，那么当你设定了密码之后， 20 天之内都无法改变这个密码呦！</li>
+<li>密码需要重新变更的天数： 由于害怕密码被某些‘有心人士’窃取而危害到整个系统的安全，所以有了这个栏位的设计。 你必须要在这个时间之内重新设定你的密码，否则这个帐号将会暂时失效。 而如果像上面的 99999 的话，那就表示，呵呵，密码不需要重新输入啦！ 不过，如果是为了安全性，最好可以设定一段时间之后，严格要求使用者变更密码呢！</li>
+<li>密码需要变更期限前的警告期限：当帐号的密码失效期限快要到的时候， 就是上面那个‘必须变更密码’的那个时间时， 系统会依据这个栏位的设定，发出‘警告’言论给这个帐号，提醒他‘再过 n 天你的密码就要失效了，请尽快重新设定你的密码呦！’，如上面的例子，则是密码到期之前的 7 天之内，系统会警告该用户。</li>
+<li>密码过期的恕限时间：如果用户过了警告期限没有重新输入密码， 使得密码失效了，也就是说，你在‘必须变更密码的期限前，并没有变更你的密码！’ 那么该组密码就称为‘失效的密码’啰～怎么办？没关系，还有这个栏位的天数设计啊～ 意思就是说，当密码失效后，你还可以用这个密码在 n 天内进行登入的意思。 而如果在这个天数后还是没有变更密码，呵呵！那么您的帐号就失效了！无法登入！</li>
+<li>帐号失效日期：这个日期跟第三个栏位一样，都是使用 1970 年以来的总日数设定。这个栏位表示： 这个帐号在此栏位规定的日期之后，将无法再使用。 这个栏位会被使用通常应该是在‘收费服务’的系统中， 你可以规定一个日期让该帐号不能再使用啦！</li>
+<li>保留：最后一个栏位是保留的，看以后有没有新功能加入。</li>
+</ol>
+<p>　　<strong>举个例子来说好了，假如我的 dmtsai 这个使用者的密码栏如下所示：</strong></p>
+<pre><code>dmtsai:$1$8zdAKdfC$XDa8eSus2I7nQL7UjRsIy/:13025:5:60:7:2:13125:
+</code></pre><p>这表示什么呢？要注意的是， 13025 是 2005/08/30 ，所以， dmtsai 这个使用者他的密码相关意义是：</p>
+<p>最近一次更动密码的日期是 2005/08/30 (13025)；<br>能够修改密码的时间是 5 天以后，也就是 2005/09/04 以前 dmtsai 不能修改自己的密码； 如果使用者还是尝试要更动自己的密码，系统就会出现这样的讯息：</p>
+<pre><code>You must wait longer to change your password
+passwd: Authentication token manipulation error
+</code></pre><p>使用者必须要在 2005/09/04 到 2005/10/29 之间的 60 天限制内去修改自己的密码，若 2005/10/29 之后还是没有变更密码时，该帐号就会宣告失效；如果使用者一直没有更改密码，那么在 2005/10/29 之前的 7 天内，系统会警告 dmtsai 应该修改密码的相关资讯；例如当 dmtsai 登入时，系统会主动提示如下的资讯：</p>
+<pre><code>Warning: your password will expire in 5 days
+</code></pre><p>如果该帐号一直到 2005/10/29 都没有更改密码，由于还有两天的恕限时间，因此， dmtsai 还是可以在 2005/10/31 以前继续登入；如果使用者在 2005/10/29 以前变更过密码，那么那个 13025 的日期就会跟著改变，因此， 所有的限制日期也会跟著相对变动喔！^_^无论使用者如何动作，到了 13125 ，大约是 2005/12/8 左右，该帐号就失效了～</p>
+<p><strong>转自<a href="http://blog.chinaunix.net/uid-20672559-id-3442754.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-20672559-id-3442754.html</a></strong></p>
+<h1 id="0x02提取密码文件"><a href="#0x02提取密码文件" class="headerlink" title="0x02提取密码文件"></a>0x02提取密码文件</h1><h2 id="创建测试账号"><a href="#创建测试账号" class="headerlink" title="创建测试账号"></a>创建测试账号</h2><pre><code>adduser textuser
+</code></pre><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="images/adduser.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="获取密码文件"><a href="#获取密码文件" class="headerlink" title="获取密码文件"></a>获取密码文件</h2><pre><code>unshadow /etc/passwd /etc/shadow &gt; password
+</code></pre><p>password就是等待破解的密码文件</p>
+<h1 id="0x03破解工具"><a href="#0x03破解工具" class="headerlink" title="0x03破解工具"></a>0x03破解工具</h1><p>使用<strong>John the Ripper password cracker</strong>（<a href="http://www.openwall.com/john/" target="_blank" rel="external">http://www.openwall.com/john/</a>）<br>我这里下载了这个版本<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="images/john.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></p>
+<h1 id="0x04开始破解"><a href="#0x04开始破解" class="headerlink" title="0x04开始破解"></a>0x04开始破解</h1><p>john既可以在windows下破解，也可以在linux下破解</p>
+<hr>
+<p><strong>直接全部爆破</strong></p>
+<pre><code>john password
+</code></pre><p><strong>制定用户爆破</strong></p>
+<pre><code>john --user:textuser（制定用户名） password
+</code></pre><p><strong>查看已经爆破的密码</strong></p>
+<pre><code>john --show password
+john --show --user：textuser password
+</code></pre><hr>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="images/po.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>密码有点复杂，还是停掉吧，把密码改成123456试试</p>
+<pre><code>passwd textuser
+123456
+123456
+</code></pre><p><strong>注意要把password重新生成一下，生成passwordnew</strong></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="images/po2.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p><strong>可以看到已经破解了密码了</strong></p>
+<p>如果需要破解复杂的密码可能需要字典了</p>
+<pre><code>john -w:all.txt（字典） passwordnew
+</code></pre><p>工具可以到我的github下载<a href="https://github.com/Bixintiao/Bixintiao.github.io.git" target="_blank" rel="external">https://github.com/Bixintiao/Bixintiao.github.io.git</a></p>
+<p>详细的john用法我到网上去dump一篇来，有时间再发吧：）</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;h1 id=&quot;0x01-etc-passwd和-etc-shadow&quot;&gt;&lt;a href=&quot;#0x01-etc-passwd和-etc-shadow&quot; class=&quot;headerlink&quot; title=&quot;0x01 /etc/passwd和/etc/shadow&quot;&gt;&lt;/a&gt;0x01
     
     </summary>
     
+    
+      <category term="linux取证" scheme="http://yoursite.com/tags/linux%E5%8F%96%E8%AF%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客说明</title>
+    <link href="http://yoursite.com/2017/03/23/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2017/03/23/博客说明/</id>
+    <published>2017-03-23T07:02:44.000Z</published>
+    <updated>2017-03-24T01:15:51.772Z</updated>
+    
+    <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github<strong>(<a href="https://github.com/Bixintiao" target="_blank" rel="external">https://github.com/Bixintiao</a>)</strong>的个人博客。个人记性不好，以后在这里<a href="http://eviadmin.top" title="Pancheng个人博客" target="_blank" rel="external">http://eviadmin.top</a>将学习的内容记录一下，方便查找。</p>
+<hr>
+<p>#个人说明#</p>
+<h2 id="毕业小菜"><a href="#毕业小菜" class="headerlink" title="毕业小菜"></a>毕业小菜</h2><p>业精于勤，荒于嬉。身边的大牛好多，感觉自己好low啊。</p>
+<h1 id="简要说明一下记录的内容"><a href="#简要说明一下记录的内容" class="headerlink" title="简要说明一下记录的内容"></a>简要说明一下记录的内容</h1><pre><code>- windows取证
+- linux取证
+- android取证
+- ios取证
+- 文件修复
+- 密码破解
+- misc
+- web
+- 隐写
+- 逆向
+- 密码
+- 想到再加：）
+</code></pre><hr>
+<p><strong>欢迎各位大佬带带小弟</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搞了半天终于搭好了hexo+github&lt;strong&gt;(&lt;a href=&quot;https://github.com/Bixintiao&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Bixintiao&lt;/a&gt;)&lt;/str
+    
+    </summary>
+    
+    
+      <category term="个人生活" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
