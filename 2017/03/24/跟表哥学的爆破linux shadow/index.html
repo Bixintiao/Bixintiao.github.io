@@ -27,10 +27,14 @@
 <meta property="og:site_name" content="Pancheng'Blog">
 <meta property="og:description" content="0x01 /etc/passwd和/etc/shadow帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的">
 <meta property="og:image" content="http://yoursite.com/images/adduser.png">
+<meta property="og:image" content="http://i.imgur.com/Uh2ePB6.png">
 <meta property="og:image" content="http://yoursite.com/images/john.png">
-<meta property="og:image" content="http://yoursite.com/images/po.png">
+<meta property="og:image" content="http://i.imgur.com/UkPMCwu.png">
 <meta property="og:image" content="http://yoursite.com/images/po2.png">
-<meta property="og:updated_time" content="2017-03-24T03:18:15.067Z">
+<meta property="og:image" content="http://i.imgur.com/N2QwUDC.png">
+<meta property="og:image" content="http://yoursite.com/images/po2.png">
+<meta property="og:image" content="http://i.imgur.com/Ripgfha.png">
+<meta property="og:updated_time" content="2017-03-24T03:24:00.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跟表哥学的爆破linux shadow">
 <meta name="twitter:description" content="0x01 /etc/passwd和/etc/shadow帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的">
@@ -205,14 +209,16 @@ adm:x:3:4:adm:/var/adm:/sbin/nologin
 <li>使用者资讯说明栏：这个栏位基本上并没有什么重要用途， 只是用来解释这个帐号的意义而已！不过，如果您提供使用 finger 的功能时， 这个栏位可以提供很多的讯息呢！底下的 chfn 可以解释一下啰！</li>
 <li>家目录：这是使用者的家目录，以上面为例， root 的家目录在 /root ，所以当 root 登入之后，就会立刻跑到 /root 里头啦！呵呵！ 如果你有个帐号的使用空间特别的大，你想要将该帐号的家目录移动到其他的硬碟去， 没有错！可以在这里进行修改呦！预设的使用者家目录在 /home/yourIDname</li>
 <li>Shell：所谓的 shell 是用来沟通人类下达的指令与硬体之间真正动作的界面！我们通常使用 /bin/bash 这个 shell 来进行指令的下达！嘿嘿！发现了吧？我们在 bash 章节里面提到很多次，登入 Linux 时为何预设是 bash 呢？就是这里设定的啦～ 这里比较需要注意的是，有一个 shell 可以用来替代成让帐号无法登入的指令！那就是 /sbin/nologin 这个东西！这也可以用来制作纯 pop 邮件帐号者的资料呢！</li>
-<li><h2 id="etc-shadow"><a href="#etc-shadow" class="headerlink" title="/etc/shadow"></a>/etc/shadow</h2><p>上面约略提到，由于每个程序都需要取得 uid 与 gid 来判断权限的问题，所以， /etc/passwd 的权限必须要设定成为 -rw-r–r– 这样的权限，在这样的情况下， 使用者的密码不就任何人都可以看到吗？即使这个档案内的密码栏是加密的， 坏心肠的朋友也可能利用暴力破解法去 try and error 找出您的密码资料……<br>因为这样的关系，所以后来发展出将密码移动到 /etc/shadow 这个档案分隔开来的技术， 而且还加入很多的密码限制参数在 /etc/shadow 里头呢！我们先来瞭解一下这个档案的构造吧！ 我的 /etc/shadow 档案有点像这样：</p>
-<p> root:$1$i9Ejldjfjio389u9sjl$jljsoi45QE/:12959:0:99999:7:::</p>
-<p> bin:*:12959:0:99999:7:::</p>
-<p> daemon:*:12959:0:99999:7:::</p>
-<p> adm:*:12959:0:99999:7:::</p>
-</li>
 </ol>
-<p>　　基本上， shadow 同样以‘:’作为分隔符号，如果数一数，会发现共有九个栏位啊， 这九个栏位的用途是这样的：</p>
+<h2 id="etc-shadow"><a href="#etc-shadow" class="headerlink" title="/etc/shadow"></a>/etc/shadow</h2><p>上面约略提到，由于每个程序都需要取得 uid 与 gid 来判断权限的问题，所以， /etc/passwd 的权限必须要设定成为 -rw-r–r– 这样的权限，在这样的情况下， 使用者的密码不就任何人都可以看到吗？即使这个档案内的密码栏是加密的， 坏心肠的朋友也可能利用暴力破解法去 try and error 找出您的密码资料……<br>因为这样的关系，所以后来发展出将密码移动到 /etc/shadow 这个档案分隔开来的技术， 而且还加入很多的密码限制参数在 /etc/shadow 里头呢！我们先来瞭解一下这个档案的构造吧！ 我的 /etc/shadow 档案有点像这样：</p>
+<pre><code>root:$1$i9Ejldjfjio389u9sjl$jljsoi45QE/:12959:0:99999:7:::
+
+bin:*:12959:0:99999:7:::
+
+daemon:*:12959:0:99999:7:::
+
+adm:*:12959:0:99999:7:::
+</code></pre><p>　　基本上， shadow 同样以‘:’作为分隔符号，如果数一数，会发现共有九个栏位啊， 这九个栏位的用途是这样的：</p>
 <ol>
 <li>帐号名称：由于密码也需要与帐号对应啊～因此， 这个档案的第一栏就是帐号，必须要与 /etc/passwd 相同才行！</li>
 <li>密码：这个才是真正的密码，而且是 经过编码过的密码啦！ 你只会看到有一些特殊符号的字母就是了！需要特别留意的是， 虽然这些加密过的密码很难被解出来，但是‘很难’不等于‘不会’，所以， 这个档案的预设属性是‘-rw——-’或者是‘-r——–’，亦即只有 root 才可以读写就是了！你得随时注意，不要不小心更动了这个档案的属性呢！另外， 如果是在密码栏的第一个字元为‘ <em> ’或者是‘ ! ’，表示这个帐号并不会被用来登入的意思。 所以万一哪一天你的某个使用者不乖时，可以先在这个档案中，将他的密码栏位的最前面多加一个 </em> ！嘿嘿！他就无法使用该帐号啰！直到他变乖了，再给他启用啊！</li>
@@ -242,12 +248,25 @@ passwd: Authentication token manipulation error
                 </div>
                 <div class="image-caption"></div>
             </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/Uh2ePB6.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h2 id="获取密码文件"><a href="#获取密码文件" class="headerlink" title="获取密码文件"></a>获取密码文件</h2><pre><code>unshadow /etc/passwd /etc/shadow &gt; password
 </code></pre><p>password就是等待破解的密码文件</p>
 <h1 id="0x03破解工具"><a href="#0x03破解工具" class="headerlink" title="0x03破解工具"></a>0x03破解工具</h1><p>使用<strong>John the Ripper password cracker</strong>（<a href="http://www.openwall.com/john/" target="_blank" rel="external">http://www.openwall.com/john/</a>）<br>我这里下载了这个版本<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="images/john.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/UkPMCwu.png" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
@@ -264,7 +283,14 @@ john --show --user：textuser password
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="images/po.png" alt="" title="">
+                    <img src="images/po2.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/N2QwUDC.png" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -280,6 +306,13 @@ john --show --user：textuser password
                 </div>
                 <div class="image-caption"></div>
             </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/Ripgfha.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <p><strong>可以看到已经破解了密码了</strong></p>
 <p>如果需要破解复杂的密码可能需要字典了</p>
 <pre><code>john -w:all.txt（字典） passwordnew
@@ -292,7 +325,7 @@ john --show --user：textuser password
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-24T03:18:15.067Z" itemprop="dateUpdated">2017年3月24日 11:18</time>
+    最后更新时间：<time datetime="2017-03-24T03:24:00.372Z" itemprop="dateUpdated">2017年3月24日 11:24</time>
 </span><br>
 
 
