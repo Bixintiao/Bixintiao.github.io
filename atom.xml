@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-24T07:42:12.775Z</updated>
+  <updated>2017-03-25T02:00:00.525Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>crackme06简单粗暴</title>
+    <link href="http://yoursite.com/2017/03/25/crackme06/"/>
+    <id>http://yoursite.com/2017/03/25/crackme06/</id>
+    <published>2017-03-25T01:31:47.000Z</published>
+    <updated>2017-03-25T02:00:00.525Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="今天爆破一个crackme的小程序吧"><a href="#今天爆破一个crackme的小程序吧" class="headerlink" title="今天爆破一个crackme的小程序吧"></a>今天爆破一个crackme的小程序吧</h1><p>首先用peid查一下壳</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/PoitBDj.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>可以看到这是一个用Delphi写的小程序，没有加壳</p>
+<p>然后用od加载进来运行一下</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/jD9Eld2.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>随便输入了一些内容，但是ok按钮是灰色的点不开啊啊啊，然后点了下about me的按钮</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/KuVNR6h.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>大概的意思就是想要破解这个程序需要然ok和cancella这两个按钮全部隐藏</p>
+<p>通过一顿百度，到网上找到了这么一个工具reshacker，支持反汇编delphi，使用工具加载程序</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/F983nME.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>翻了一下，找到了ok和cancella两个按钮的object，然后到百度上搜了一下delphi的命令</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/3EJBwcO.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>打开新编译的程序，成功破解了，具体走od的算法对于我这个渣渣来说好难啊，希望有大牛来指点一下：）</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/qhUAqtW.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>源程序和使用工具请到我的git上下载<a href="https://github.com/Bixintiao/blogtool.git" target="_blank" rel="external">https://github.com/Bixintiao/blogtool.git</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;今天爆破一个crackme的小程序吧&quot;&gt;&lt;a href=&quot;#今天爆破一个crackme的小程序吧&quot; class=&quot;headerlink&quot; title=&quot;今天爆破一个crackme的小程序吧&quot;&gt;&lt;/a&gt;今天爆破一个crackme的小程序吧&lt;/h1&gt;&lt;p&gt;首先用pei
+    
+    </summary>
+    
+    
+      <category term="逆向" scheme="http://yoursite.com/tags/%E9%80%86%E5%90%91/"/>
+    
+  </entry>
   
   <entry>
     <title>John用法</title>
@@ -107,7 +178,7 @@ cd john-1
     <link href="http://yoursite.com/2017/03/24/%E8%B7%9F%E8%A1%A8%E5%93%A5%E5%AD%A6%E7%9A%84%E7%88%86%E7%A0%B4linux%20shadow/"/>
     <id>http://yoursite.com/2017/03/24/跟表哥学的爆破linux shadow/</id>
     <published>2017-03-24T01:18:20.000Z</published>
-    <updated>2017-03-24T07:43:36.728Z</updated>
+    <updated>2017-03-25T02:00:07.892Z</updated>
     
     <content type="html"><![CDATA[<p><strong>这个操作的前提是拿到root权限，至于root权限可以参考单用户绕过，具体步骤改天出</strong></p>
 <h1 id="0x01-etc-passwd和-etc-shadow"><a href="#0x01-etc-passwd和-etc-shadow" class="headerlink" title="0x01 /etc/passwd和/etc/shadow"></a>0x01 /etc/passwd和/etc/shadow</h1><p>帐号管理最重要的两个档案就是‘ /etc/passwd 与 /etc/shadow ’了！这两个档案可以说是 Linux 里头最重要的档案之一了！ 如果没有这两个档案的话，呵呵！您可是无法登入 Linux 的呦！所以，底下我们先针对这两个档案来进行说明。当然啰，更详细的资料您可以自行 man 5 passwd 及 man 5 shadow 的啦～</p>
@@ -235,7 +306,7 @@ john --show --user：textuser password
 <p><strong>可以看到已经破解了密码了</strong></p>
 <p>如果需要破解复杂的密码可能需要字典了</p>
 <pre><code>john -w:all.txt（字典） passwordnew
-</code></pre><p>工具可以到我的github下载<a href="https://github.com/Bixintiao/Bixintiao.github.io.git" target="_blank" rel="external">https://github.com/Bixintiao/Bixintiao.github.io.git</a></p>
+</code></pre><p>工具可以到我的github下载<a href="https://github.com/Bixintiao/blogtool.git" target="_blank" rel="external">https://github.com/Bixintiao/blogtool.git</a></p>
 <p>详细的john用法我到网上去dump一篇来，有时间再发吧：）</p>
 ]]></content>
     
@@ -253,12 +324,12 @@ john --show --user：textuser password
   
   <entry>
     <title>博客说明</title>
-    <link href="http://yoursite.com/2017/03/23/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
-    <id>http://yoursite.com/2017/03/23/博客说明/</id>
-    <published>2017-03-23T07:02:44.000Z</published>
-    <updated>2017-03-24T01:15:51.772Z</updated>
+    <link href="http://yoursite.com/2017/03/24/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2017/03/24/博客说明/</id>
+    <published>2017-03-24T01:18:17.000Z</published>
+    <updated>2017-03-25T01:59:20.861Z</updated>
     
-    <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github<strong>(<a href="https://github.com/Bixintiao" target="_blank" rel="external">https://github.com/Bixintiao</a>)</strong>的个人博客。个人记性不好，以后在这里<a href="http://eviadmin.top" title="Pancheng个人博客" target="_blank" rel="external">http://eviadmin.top</a>将学习的内容记录一下，方便查找。</p>
+    <content type="html"><![CDATA[<p>搞了半天终于搭好了hexo+github<strong>(<a href="https://github.com/Bixintiao" target="_blank" rel="external">https://github.com/Bixintiao</a>)</strong>的个人博客。个人记性不好，以后在这里<a href="http://eviadmin.top" title="Pancheng个人博客" target="_blank" rel="external">http://eviadmin.top</a>将学习的内容记录一下，方便查找。（上传工具到github老是失败，所以有些工具大家自行百度吧）</p>
 <hr>
 <p>#个人说明#</p>
 <h2 id="毕业小菜"><a href="#毕业小菜" class="headerlink" title="毕业小菜"></a>毕业小菜</h2><p>业精于勤，荒于嬉。身边的大牛好多，感觉自己好low啊。</p>
