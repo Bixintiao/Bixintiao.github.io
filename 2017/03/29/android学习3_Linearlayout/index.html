@@ -13,52 +13,26 @@
     
     
     
-    <title>android学习1 | Pancheng&#39;Blog | null</title>
+    <title>android学习3_线性布局 | Pancheng&#39;Blog | null</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="android学习">
-    <meta name="description" content="Android应用结构
-                
-                    
-                    
-                
-                
-            
-（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
-
-（2）HelloWorld.apk:可直接">
+    <meta name="description" content="LinearLayout类线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置android:orientation=”horizontal”为水平方向android:orientation=”vertital”为垂直方向
+HorizontalScrollView水平滚动条HorizontalScrollView是一个容器，可以包裹">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android学习1">
-<meta property="og:url" content="http://yoursite.com/2017/03/29/android学习1/index.html">
+<meta property="og:title" content="android学习3_线性布局">
+<meta property="og:url" content="http://yoursite.com/2017/03/29/android学习3_Linearlayout/index.html">
 <meta property="og:site_name" content="Pancheng'Blog">
-<meta property="og:description" content="Android应用结构
-                
-                    
-                    
-                
-                
-            
-（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
-
-（2）HelloWorld.apk:可直接">
-<meta property="og:image" content="http://i.imgur.com/1oLlM0i.png">
-<meta property="og:updated_time" content="2017-03-29T00:31:03.514Z">
+<meta property="og:description" content="LinearLayout类线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置android:orientation=”horizontal”为水平方向android:orientation=”vertital”为垂直方向
+HorizontalScrollView水平滚动条HorizontalScrollView是一个容器，可以包裹">
+<meta property="og:updated_time" content="2017-03-29T01:05:27.563Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android学习1">
-<meta name="twitter:description" content="Android应用结构
-                
-                    
-                    
-                
-                
-            
-（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
-
-（2）HelloWorld.apk:可直接">
-<meta name="twitter:image" content="http://i.imgur.com/1oLlM0i.png">
+<meta name="twitter:title" content="android学习3_线性布局">
+<meta name="twitter:description" content="LinearLayout类线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置android:orientation=”horizontal”为水平方向android:orientation=”vertital”为垂直方向
+HorizontalScrollView水平滚动条HorizontalScrollView是一个容器，可以包裹">
     
         <link rel="alternative" href="/atom.xml" title="Pancheng&#39;Blog" type="application/atom+xml">
     
@@ -135,7 +109,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">android学习1</div>
+        <div class="flex-col header-title ellipsis">android学习3_线性布局</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -157,10 +131,10 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">android学习1</h1>
+        <h1 class="title">android学习3_线性布局</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-03-29T00:09:41.000Z" itemprop="datePublished" class="page-time">
+                <time datetime="2017-03-29T00:50:57.000Z" itemprop="datePublished" class="page-time">
   2017-03-29
 </time>
 
@@ -179,17 +153,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android应用结构"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android应用结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gen目录"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">gen目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Manifest-xml清单文件"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Manifest.xml清单文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android程序基本执行过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">Android程序基本执行过程</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android的四大组件"><span class="post-toc-number">3.</span> <span class="post-toc-text">Android的四大组件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android的MVC模式"><span class="post-toc-number">4.</span> <span class="post-toc-text">Android的MVC模式</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#LinearLayout类"><span class="post-toc-number">1.</span> <span class="post-toc-text">LinearLayout类</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HorizontalScrollView水平滚动条"><span class="post-toc-number">2.</span> <span class="post-toc-text">HorizontalScrollView水平滚动条</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ScrollView垂直滚动条"><span class="post-toc-number">3.</span> <span class="post-toc-text">ScrollView垂直滚动条</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-android学习1"
+<article id="post-android学习3_Linearlayout"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">android学习1</h1>
+        <h1 class="post-card-title">android学习3_线性布局</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017年03月29日 8:09" datetime="2017-03-29T00:09:41.000Z"  itemprop="datePublished">2017-03-29</time>
+            <time class="post-time" title="2017年03月29日 8:50" datetime="2017-03-29T00:50:57.000Z"  itemprop="datePublished">2017-03-29</time>
 
             
 
@@ -204,37 +178,15 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Android应用结构"><a href="#Android应用结构" class="headerlink" title="Android应用结构"></a>Android应用结构</h1><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="http://i.imgur.com/1oLlM0i.png" alt="" title="">
-                </div>
-                <div class="image-caption"></div>
-            </figure>
-<pre><code>（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+            <h1 id="LinearLayout类"><a href="#LinearLayout类" class="headerlink" title="LinearLayout类"></a>LinearLayout类</h1><p>线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置<br>android:orientation=”horizontal”为水平方向<br>android:orientation=”vertital”为垂直方向</p>
+<h1 id="HorizontalScrollView水平滚动条"><a href="#HorizontalScrollView水平滚动条" class="headerlink" title="HorizontalScrollView水平滚动条"></a>HorizontalScrollView水平滚动条</h1><p>HorizontalScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<horizontalscrollview>中进行定义</horizontalscrollview></p>
+<horizontalscrollview>
 
-（2）HelloWorld.apk:可直接安装的包，平时我们下载的app安装程序包就是这一个文件。
+<p></p></horizontalscrollview><p></p>
+<h1 id="ScrollView垂直滚动条"><a href="#ScrollView垂直滚动条" class="headerlink" title="ScrollView垂直滚动条"></a>ScrollView垂直滚动条</h1><p>ScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<lscrollview>中进行定义</lscrollview></p>
+<scrollview>
 
-（3）activity_main.xml：主布局文件的源代码文件，一般设置APP的页面显示时，可以用layout下的xml布局文件来定义。
-</code></pre><h2 id="gen目录"><a href="#gen目录" class="headerlink" title="gen目录"></a>gen目录</h2><p>gen目录中存放ADT自动生成的文件,该目录中最主要的就是R.java文件。Android开发工具会根据res目录中的xml文件、图片等资源，同步更新R.java文件。R.java在应用中起着字典的作用，它包含各种资源的引用，通过R.java系统可以很方便地找到对应资源。编绎器会根据R.java文件，检查资源是否被使用，没有使用的资源不会打包到安装文件中。 </p>
-<h2 id="Manifest-xml清单文件"><a href="#Manifest-xml清单文件" class="headerlink" title="Manifest.xml清单文件"></a>Manifest.xml清单文件</h2><p>清单文件主要包含的信息包括：<br>应用程序名称、图标、版本号</p>
-<p>应用程序的包名，该包名将会作为该应用的唯一标识；</p>
-<p>应用程序所包含的组件，如Activity、Service等；</p>
-<p>应用程序兼容的最低版本；</p>
-<p>应用程序使用系统所需的权限声明；</p>
-<p>其他程序访问该程序所需的权限声明。</p>
-<h1 id="Android程序基本执行过程"><a href="#Android程序基本执行过程" class="headerlink" title="Android程序基本执行过程"></a>Android程序基本执行过程</h1><ol>
-<li>读取AndroidManifest.xml清单文件，设置一些基本信息，图标、名称，同时在application里面找到入口Activity</li>
-<li>创建Activity类的对象，自动调用oncreate()方法，并显示对应的layout布局界面</li>
-<li>根据layout属性显示相应的控件，同时执行oncreate()方法的动态调用。</li>
-</ol>
-<h1 id="Android的四大组件"><a href="#Android的四大组件" class="headerlink" title="Android的四大组件"></a>Android的四大组件</h1><ol>
-<li>Activity: 在Android应用中负责与用户进行交互的组件，我们称之为“活动”，一个Activity就是一个屏幕。 </li>
-<li>Service: 代表一个单独的Android组件，Service与Activity的区别在于：Service通常位于后台运行，它一般不需要与用户交互，一些Service组件没有图形用户界面。 </li>
-<li>BroadcastReceiver: 代表广播消息接收器，非常类似于事件编程中的监听器，所监听的事件源是Android应用中的其他组件。 </li>
-<li>ContentProvider: 提供一种跨应用的数据交换的标准。</li>
-</ol>
-<h1 id="Android的MVC模式"><a href="#Android的MVC模式" class="headerlink" title="Android的MVC模式"></a>Android的MVC模式</h1><p>MVC模式，即(Model-View-Controller)：M指模型层、V指视图层、C是控制层。MVC把应用程序的模型层与视图层完全分开，最大的好处是：界面设计人员可以直接参与到界面开发，程序员则可以把精力放在业务逻辑上。 </p>
+<p></p></scrollview><p></p>
 
         </div>
 
@@ -242,11 +194,11 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-29T00:31:03.514Z" itemprop="dateUpdated">2017年3月29日 8:31</time>
+    最后更新时间：<time datetime="2017-03-29T01:05:27.563Z" itemprop="dateUpdated">2017年3月29日 9:05</time>
 </span><br>
 
 
-        By Pancheng：<a href="/2017/03/29/android学习1/" target="_blank" rel="external">http://yoursite.com/2017/03/29/android学习1/</a>
+        By Pancheng：<a href="/2017/03/29/android学习3_Linearlayout/" target="_blank" rel="external">http://yoursite.com/2017/03/29/android学习3_Linearlayout/</a>
     </div>
     <footer>
         <a href="http://yoursite.com">
@@ -275,7 +227,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&title=《android学习3_线性布局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -285,22 +237,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&title=《android学习3_线性布局》 — Pancheng'Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习1/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习3_Linearlayout/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习1》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习1/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习3_线性布局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习1/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -320,21 +272,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/03/29/android学习2_View组件/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">android学习2_View组件</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/03/26/个人小记/" id="post-next" class="post-nav-link">
+      <a href="/2017/03/29/android学习4_Tablelayout/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">个人小记</h4>
+        <h4 class="title">android学习3_线性布局</h4>
       </a>
     </div>
   
@@ -345,7 +290,7 @@
     
 
 <div class="comments" id="comments">
-    <div class="ds-thread" data-thread-key="android学习1" data-title="android学习1" data-url="http://yoursite.com/2017/03/29/android学习1/"></div>
+    <div class="ds-thread" data-thread-key="android学习3_Linearlayout" data-title="android学习3_线性布局" data-url="http://yoursite.com/2017/03/29/android学习3_Linearlayout/"></div>
 </div>
 <script>
 lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
@@ -423,7 +368,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&title=《android学习3_线性布局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -433,22 +378,22 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&title=《android学习3_线性布局》 — Pancheng'Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习1/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习3_Linearlayout/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习1》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习1/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习3_线性布局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习1/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习3_Linearlayout/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -459,7 +404,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/03/29/android学习1/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/03/29/android学习3_Linearlayout/" alt="微信分享二维码">
 </div>
 
 

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-29T00:28:32.189Z</updated>
+  <updated>2017-03-29T01:05:27.563Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,150 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>android学习3_线性布局</title>
+    <link href="http://yoursite.com/2017/03/29/android%E5%AD%A6%E4%B9%A03_Linearlayout/"/>
+    <id>http://yoursite.com/2017/03/29/android学习3_Linearlayout/</id>
+    <published>2017-03-29T00:50:57.000Z</published>
+    <updated>2017-03-29T01:05:27.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="LinearLayout类"><a href="#LinearLayout类" class="headerlink" title="LinearLayout类"></a>LinearLayout类</h1><p>线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置<br>android:orientation=”horizontal”为水平方向<br>android:orientation=”vertital”为垂直方向</p>
+<h1 id="HorizontalScrollView水平滚动条"><a href="#HorizontalScrollView水平滚动条" class="headerlink" title="HorizontalScrollView水平滚动条"></a>HorizontalScrollView水平滚动条</h1><p>HorizontalScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<horizontalscrollview>中进行定义</horizontalscrollview></p>
+<horizontalscrollview>
+
+<p></p></horizontalscrollview><p></p>
+<h1 id="ScrollView垂直滚动条"><a href="#ScrollView垂直滚动条" class="headerlink" title="ScrollView垂直滚动条"></a>ScrollView垂直滚动条</h1><p>ScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<lscrollview>中进行定义</lscrollview></p>
+<scrollview>
+
+<p></p></scrollview><p></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;LinearLayout类&quot;&gt;&lt;a href=&quot;#LinearLayout类&quot; class=&quot;headerlink&quot; title=&quot;LinearLayout类&quot;&gt;&lt;/a&gt;LinearLayout类&lt;/h1&gt;&lt;p&gt;线性布局由LinearLayout类来控制，只有两种
+    
+    </summary>
+    
+    
+      <category term="android学习" scheme="http://yoursite.com/tags/android%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android学习3_线性布局</title>
+    <link href="http://yoursite.com/2017/03/29/android%E5%AD%A6%E4%B9%A04_Tablelayout/"/>
+    <id>http://yoursite.com/2017/03/29/android学习4_Tablelayout/</id>
+    <published>2017-03-29T00:50:57.000Z</published>
+    <updated>2017-03-29T01:05:27.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="LinearLayout类"><a href="#LinearLayout类" class="headerlink" title="LinearLayout类"></a>LinearLayout类</h1><p>线性布局由LinearLayout类来控制，只有两种排列方式，通过设置android:orientation属性来设置<br>android:orientation=”horizontal”为水平方向<br>android:orientation=”vertital”为垂直方向</p>
+<h1 id="HorizontalScrollView水平滚动条"><a href="#HorizontalScrollView水平滚动条" class="headerlink" title="HorizontalScrollView水平滚动条"></a>HorizontalScrollView水平滚动条</h1><p>HorizontalScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<horizontalscrollview>中进行定义</horizontalscrollview></p>
+<horizontalscrollview>
+
+<p></p></horizontalscrollview><p></p>
+<h1 id="ScrollView垂直滚动条"><a href="#ScrollView垂直滚动条" class="headerlink" title="ScrollView垂直滚动条"></a>ScrollView垂直滚动条</h1><p>ScrollView是一个容器，可以包裹线性布局,同时还要将xmlns命名空间复制到<lscrollview>中进行定义</lscrollview></p>
+<scrollview>
+
+<p></p></scrollview><p></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;LinearLayout类&quot;&gt;&lt;a href=&quot;#LinearLayout类&quot; class=&quot;headerlink&quot; title=&quot;LinearLayout类&quot;&gt;&lt;/a&gt;LinearLayout类&lt;/h1&gt;&lt;p&gt;线性布局由LinearLayout类来控制，只有两种
+    
+    </summary>
+    
+    
+      <category term="android学习" scheme="http://yoursite.com/tags/android%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android学习2_View组件</title>
+    <link href="http://yoursite.com/2017/03/29/android%E5%AD%A6%E4%B9%A02_View%E7%BB%84%E4%BB%B6/"/>
+    <id>http://yoursite.com/2017/03/29/android学习2_View组件/</id>
+    <published>2017-03-29T00:31:16.000Z</published>
+    <updated>2017-03-29T00:47:18.897Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="首先创建一个新的Android-project"><a href="#首先创建一个新的Android-project" class="headerlink" title="首先创建一个新的Android project"></a>首先创建一个新的Android project</h1><pre><code>File&gt;New&gt;Android Application Project设置相关属性后完成创建
+</code></pre><h1 id="设置布局文件activity-main-xml"><a href="#设置布局文件activity-main-xml" class="headerlink" title="设置布局文件activity_main.xml"></a>设置布局文件activity_main.xml</h1><h2 id="采取线性布局"><a href="#采取线性布局" class="headerlink" title="采取线性布局"></a>采取线性布局</h2><pre><code>&lt;Linearlayout
+//线性布局设置为纵向布局“vertical”
+android:orientation=&quot;vertical&quot;
+.......
+/&gt;
+&lt;/Linearlayout&gt;
+</code></pre><h2 id="Textview"><a href="#Textview" class="headerlink" title="Textview"></a>Textview</h2><pre><code>&lt;TextView
+//设置如果有map、电话、email、网页等信息的话会自动链接
+    android:autoLink=&quot;all&quot;
+//+到R函数的id
+    android:id=&quot;@+id/myText&quot;
+//设置水平居中
+    android:layout_gravity=&quot;center_horizontal&quot;
+//宽度、长度为内容包裹
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+//字体大小为25sp
+    android:textSize=&quot;25sp&quot;
+     /&gt;
+</code></pre><h2 id="EditText"><a href="#EditText" class="headerlink" title="EditText"></a>EditText</h2><pre><code>&lt;EditText 
+//宽度为屏幕铺满
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;wrap_content&quot;
+//提示信息
+    android:hint=&quot;请输入密码&quot;
+//文本类型
+    android:inputType=&quot;textPassword&quot;
+    /&gt;
+</code></pre><h1 id="设置Mainactivity-java类"><a href="#设置Mainactivity-java类" class="headerlink" title="设置Mainactivity.java类"></a>设置Mainactivity.java类</h1><pre><code>package pc.viewtext.study;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
+import android.view.Menu;
+import android.widget.TextView;
+
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView text1=(TextView)findViewById(R.id.myText);
+        text1.setText(Html.fromHtml(&quot;欢迎&lt;font color=&apos;red&apos;&gt;加入&lt;/font&gt;&lt;a href=&apos;http://www.baidu.com&apos;&gt;百度&lt;/a&gt;&quot;));
+
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+}
+</code></pre><p>MainActivity从属于Activity类，会自动执行oncreate()函数，其中setContentView(R.layout.activity_main)，就是用来加载对应的布局文件的</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;首先创建一个新的Android-project&quot;&gt;&lt;a href=&quot;#首先创建一个新的Android-project&quot; class=&quot;headerlink&quot; title=&quot;首先创建一个新的Android project&quot;&gt;&lt;/a&gt;首先创建一个新的Android p
+    
+    </summary>
+    
+    
+      <category term="android学习" scheme="http://yoursite.com/tags/android%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>android学习1</title>
     <link href="http://yoursite.com/2017/03/29/android%E5%AD%A6%E4%B9%A01/"/>
     <id>http://yoursite.com/2017/03/29/android学习1/</id>
     <published>2017-03-29T00:09:41.000Z</published>
-    <updated>2017-03-29T00:28:32.189Z</updated>
+    <updated>2017-03-29T00:31:03.514Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="0x01Android应用结构"><a href="#0x01Android应用结构" class="headerlink" title="0x01Android应用结构"></a>0x01Android应用结构</h1><figure class="image-bubble">
+    <content type="html"><![CDATA[<h1 id="Android应用结构"><a href="#Android应用结构" class="headerlink" title="Android应用结构"></a>Android应用结构</h1><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://i.imgur.com/1oLlM0i.png" alt="" title="">
@@ -57,7 +194,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;0x01Android应用结构&quot;&gt;&lt;a href=&quot;#0x01Android应用结构&quot; class=&quot;headerlink&quot; title=&quot;0x01Android应用结构&quot;&gt;&lt;/a&gt;0x01Android应用结构&lt;/h1&gt;&lt;figure class=&quot;image-
+      &lt;h1 id=&quot;Android应用结构&quot;&gt;&lt;a href=&quot;#Android应用结构&quot; class=&quot;headerlink&quot; title=&quot;Android应用结构&quot;&gt;&lt;/a&gt;Android应用结构&lt;/h1&gt;&lt;figure class=&quot;image-bubble&quot;&gt;
+       
     
     </summary>
     
