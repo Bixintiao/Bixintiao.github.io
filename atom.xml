@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-25T23:59:50.119Z</updated>
+  <updated>2017-03-29T00:28:32.189Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>android学习1</title>
+    <link href="http://yoursite.com/2017/03/29/android%E5%AD%A6%E4%B9%A01/"/>
+    <id>http://yoursite.com/2017/03/29/android学习1/</id>
+    <published>2017-03-29T00:09:41.000Z</published>
+    <updated>2017-03-29T00:28:32.189Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="0x01Android应用结构"><a href="#0x01Android应用结构" class="headerlink" title="0x01Android应用结构"></a>0x01Android应用结构</h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/1oLlM0i.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<pre><code>（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+
+（2）HelloWorld.apk:可直接安装的包，平时我们下载的app安装程序包就是这一个文件。
+
+（3）activity_main.xml：主布局文件的源代码文件，一般设置APP的页面显示时，可以用layout下的xml布局文件来定义。
+</code></pre><h2 id="gen目录"><a href="#gen目录" class="headerlink" title="gen目录"></a>gen目录</h2><p>gen目录中存放ADT自动生成的文件,该目录中最主要的就是R.java文件。Android开发工具会根据res目录中的xml文件、图片等资源，同步更新R.java文件。R.java在应用中起着字典的作用，它包含各种资源的引用，通过R.java系统可以很方便地找到对应资源。编绎器会根据R.java文件，检查资源是否被使用，没有使用的资源不会打包到安装文件中。 </p>
+<h2 id="Manifest-xml清单文件"><a href="#Manifest-xml清单文件" class="headerlink" title="Manifest.xml清单文件"></a>Manifest.xml清单文件</h2><p>清单文件主要包含的信息包括：<br>应用程序名称、图标、版本号</p>
+<p>应用程序的包名，该包名将会作为该应用的唯一标识；</p>
+<p>应用程序所包含的组件，如Activity、Service等；</p>
+<p>应用程序兼容的最低版本；</p>
+<p>应用程序使用系统所需的权限声明；</p>
+<p>其他程序访问该程序所需的权限声明。</p>
+<h1 id="Android程序基本执行过程"><a href="#Android程序基本执行过程" class="headerlink" title="Android程序基本执行过程"></a>Android程序基本执行过程</h1><ol>
+<li>读取AndroidManifest.xml清单文件，设置一些基本信息，图标、名称，同时在application里面找到入口Activity</li>
+<li>创建Activity类的对象，自动调用oncreate()方法，并显示对应的layout布局界面</li>
+<li>根据layout属性显示相应的控件，同时执行oncreate()方法的动态调用。</li>
+</ol>
+<h1 id="Android的四大组件"><a href="#Android的四大组件" class="headerlink" title="Android的四大组件"></a>Android的四大组件</h1><ol>
+<li>Activity: 在Android应用中负责与用户进行交互的组件，我们称之为“活动”，一个Activity就是一个屏幕。 </li>
+<li>Service: 代表一个单独的Android组件，Service与Activity的区别在于：Service通常位于后台运行，它一般不需要与用户交互，一些Service组件没有图形用户界面。 </li>
+<li>BroadcastReceiver: 代表广播消息接收器，非常类似于事件编程中的监听器，所监听的事件源是Android应用中的其他组件。 </li>
+<li>ContentProvider: 提供一种跨应用的数据交换的标准。</li>
+</ol>
+<h1 id="Android的MVC模式"><a href="#Android的MVC模式" class="headerlink" title="Android的MVC模式"></a>Android的MVC模式</h1><p>MVC模式，即(Model-View-Controller)：M指模型层、V指视图层、C是控制层。MVC把应用程序的模型层与视图层完全分开，最大的好处是：界面设计人员可以直接参与到界面开发，程序员则可以把精力放在业务逻辑上。 </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;0x01Android应用结构&quot;&gt;&lt;a href=&quot;#0x01Android应用结构&quot; class=&quot;headerlink&quot; title=&quot;0x01Android应用结构&quot;&gt;&lt;/a&gt;0x01Android应用结构&lt;/h1&gt;&lt;figure class=&quot;image-
+    
+    </summary>
+    
+    
+      <category term="android学习" scheme="http://yoursite.com/tags/android%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>个人小记</title>

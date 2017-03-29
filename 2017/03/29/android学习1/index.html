@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>android学习1 | Pancheng&#39;Blog | null</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="android学习">
+    <meta name="description" content="0x01Android应用结构
+                
+                    
+                    
+                
+                
+            
+（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+
+（2）HelloWorld.apk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android学习1">
+<meta property="og:url" content="http://yoursite.com/2017/03/29/android学习1/index.html">
+<meta property="og:site_name" content="Pancheng'Blog">
+<meta property="og:description" content="0x01Android应用结构
+                
+                    
+                    
+                
+                
+            
+（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+
+（2）HelloWorld.apk">
+<meta property="og:image" content="http://i.imgur.com/1oLlM0i.png">
+<meta property="og:updated_time" content="2017-03-29T00:28:32.189Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android学习1">
+<meta name="twitter:description" content="0x01Android应用结构
+                
+                    
+                    
+                
+                
+            
+（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+
+（2）HelloWorld.apk">
+<meta name="twitter:image" content="http://i.imgur.com/1oLlM0i.png">
+    
+        <link rel="alternative" href="/atom.xml" title="Pancheng&#39;Blog" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.14">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Pan Cheng</h5>
+          <a href="mailto:2509959910@qq.com" title="2509959910@qq.com" class="mail">2509959910@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Bixintiao/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                先放着:)
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">android学习1</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">android学习1</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-29T00:09:41.000Z" itemprop="datePublished" class="page-time">
+  2017-03-29
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0x01Android应用结构"><span class="post-toc-number">1.</span> <span class="post-toc-text">0x01Android应用结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gen目录"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">gen目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Manifest-xml清单文件"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Manifest.xml清单文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android程序基本执行过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">Android程序基本执行过程</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android的四大组件"><span class="post-toc-number">3.</span> <span class="post-toc-text">Android的四大组件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android的MVC模式"><span class="post-toc-number">4.</span> <span class="post-toc-text">Android的MVC模式</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-android学习1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">android学习1</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月29日 8:09" datetime="2017-03-29T00:09:41.000Z"  itemprop="datePublished">2017-03-29</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="0x01Android应用结构"><a href="#0x01Android应用结构" class="headerlink" title="0x01Android应用结构"></a>0x01Android应用结构</h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://i.imgur.com/1oLlM0i.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<pre><code>（1）MainActivity.java：主程序，运行一个APP时，app首先启动的界面就是这个程序定义的类一个实例。
+
+（2）HelloWorld.apk:可直接安装的包，平时我们下载的app安装程序包就是这一个文件。
+
+（3）activity_main.xml：主布局文件的源代码文件，一般设置APP的页面显示时，可以用layout下的xml布局文件来定义。
+</code></pre><h2 id="gen目录"><a href="#gen目录" class="headerlink" title="gen目录"></a>gen目录</h2><p>gen目录中存放ADT自动生成的文件,该目录中最主要的就是R.java文件。Android开发工具会根据res目录中的xml文件、图片等资源，同步更新R.java文件。R.java在应用中起着字典的作用，它包含各种资源的引用，通过R.java系统可以很方便地找到对应资源。编绎器会根据R.java文件，检查资源是否被使用，没有使用的资源不会打包到安装文件中。 </p>
+<h2 id="Manifest-xml清单文件"><a href="#Manifest-xml清单文件" class="headerlink" title="Manifest.xml清单文件"></a>Manifest.xml清单文件</h2><p>清单文件主要包含的信息包括：<br>应用程序名称、图标、版本号</p>
+<p>应用程序的包名，该包名将会作为该应用的唯一标识；</p>
+<p>应用程序所包含的组件，如Activity、Service等；</p>
+<p>应用程序兼容的最低版本；</p>
+<p>应用程序使用系统所需的权限声明；</p>
+<p>其他程序访问该程序所需的权限声明。</p>
+<h1 id="Android程序基本执行过程"><a href="#Android程序基本执行过程" class="headerlink" title="Android程序基本执行过程"></a>Android程序基本执行过程</h1><ol>
+<li>读取AndroidManifest.xml清单文件，设置一些基本信息，图标、名称，同时在application里面找到入口Activity</li>
+<li>创建Activity类的对象，自动调用oncreate()方法，并显示对应的layout布局界面</li>
+<li>根据layout属性显示相应的控件，同时执行oncreate()方法的动态调用。</li>
+</ol>
+<h1 id="Android的四大组件"><a href="#Android的四大组件" class="headerlink" title="Android的四大组件"></a>Android的四大组件</h1><ol>
+<li>Activity: 在Android应用中负责与用户进行交互的组件，我们称之为“活动”，一个Activity就是一个屏幕。 </li>
+<li>Service: 代表一个单独的Android组件，Service与Activity的区别在于：Service通常位于后台运行，它一般不需要与用户交互，一些Service组件没有图形用户界面。 </li>
+<li>BroadcastReceiver: 代表广播消息接收器，非常类似于事件编程中的监听器，所监听的事件源是Android应用中的其他组件。 </li>
+<li>ContentProvider: 提供一种跨应用的数据交换的标准。</li>
+</ol>
+<h1 id="Android的MVC模式"><a href="#Android的MVC模式" class="headerlink" title="Android的MVC模式"></a>Android的MVC模式</h1><p>MVC模式，即(Model-View-Controller)：M指模型层、V指视图层、C是控制层。MVC把应用程序的模型层与视图层完全分开，最大的好处是：界面设计人员可以直接参与到界面开发，程序员则可以把精力放在业务逻辑上。 </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-29T00:28:32.189Z" itemprop="dateUpdated">2017年3月29日 8:28</time>
+</span><br>
+
+
+        By Pancheng：<a href="/2017/03/29/android学习1/" target="_blank" rel="external">http://yoursite.com/2017/03/29/android学习1/</a>
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Pan Cheng">
+            Pan Cheng
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android学习/">android学习</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习1》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习1/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/26/个人小记/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">个人小记</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="android学习1" data-title="android学习1" data-url="http://yoursite.com/2017/03/29/android学习1/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'ysblog', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.14');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Pancheng'Blog &copy; 2016 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习1/&title=《android学习1》 — Pancheng'Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习1》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习1/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/03/29/android学习1/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.14"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.14" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
