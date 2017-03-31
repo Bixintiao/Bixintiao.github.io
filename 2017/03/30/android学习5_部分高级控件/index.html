@@ -13,26 +13,35 @@
     
     
     
-    <title>android学习4_表格布局和相对布局 | Pancheng&#39;Blog | null</title>
+    <title>android学习5_部分高级控件局 | Pancheng&#39;Blog | null</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="android学习">
-    <meta name="description" content="TableLayout类表格布局由TableLayout类控制，通过添加Tablerow来增加一行，每次增加一个空间相当于增加一列，空间的高度决定了每行的高度。
-表格布局的常见属性android:collapseColumns //隐藏指定的列android:shrinkColumns //收缩指定的列以适应屏幕android:stretchColumns //扩展指定的列填充屏幕android:">
+    <meta name="description" content="图片控件ImageView 图片视图用于显示图片，与Textview一样同属于View类现将图片素材放入Drawable然后通过设置android:src=”@drawable/“
+android:scaleTpye属性可以缩放图片
+=&amp;quot;fitCenter&amp;quot; 表示完全缩放
+=&amp;quot;fitXY&amp;quot;  表示完全适应imageview容器，不保持纵横比。
+=&amp;quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android学习4_表格布局和相对布局">
-<meta property="og:url" content="http://yoursite.com/2017/03/29/android学习4_Tablelayout/index.html">
+<meta property="og:title" content="android学习5_部分高级控件局">
+<meta property="og:url" content="http://yoursite.com/2017/03/30/android学习5_部分高级控件/index.html">
 <meta property="og:site_name" content="Pancheng'Blog">
-<meta property="og:description" content="TableLayout类表格布局由TableLayout类控制，通过添加Tablerow来增加一行，每次增加一个空间相当于增加一列，空间的高度决定了每行的高度。
-表格布局的常见属性android:collapseColumns //隐藏指定的列android:shrinkColumns //收缩指定的列以适应屏幕android:stretchColumns //扩展指定的列填充屏幕android:">
-<meta property="og:updated_time" content="2017-03-30T01:57:05.936Z">
+<meta property="og:description" content="图片控件ImageView 图片视图用于显示图片，与Textview一样同属于View类现将图片素材放入Drawable然后通过设置android:src=”@drawable/“
+android:scaleTpye属性可以缩放图片
+=&amp;quot;fitCenter&amp;quot; 表示完全缩放
+=&amp;quot;fitXY&amp;quot;  表示完全适应imageview容器，不保持纵横比。
+=&amp;quot;">
+<meta property="og:updated_time" content="2017-03-30T12:06:48.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android学习4_表格布局和相对布局">
-<meta name="twitter:description" content="TableLayout类表格布局由TableLayout类控制，通过添加Tablerow来增加一行，每次增加一个空间相当于增加一列，空间的高度决定了每行的高度。
-表格布局的常见属性android:collapseColumns //隐藏指定的列android:shrinkColumns //收缩指定的列以适应屏幕android:stretchColumns //扩展指定的列填充屏幕android:">
+<meta name="twitter:title" content="android学习5_部分高级控件局">
+<meta name="twitter:description" content="图片控件ImageView 图片视图用于显示图片，与Textview一样同属于View类现将图片素材放入Drawable然后通过设置android:src=”@drawable/“
+android:scaleTpye属性可以缩放图片
+=&amp;quot;fitCenter&amp;quot; 表示完全缩放
+=&amp;quot;fitXY&amp;quot;  表示完全适应imageview容器，不保持纵横比。
+=&amp;quot;">
     
         <link rel="alternative" href="/atom.xml" title="Pancheng&#39;Blog" type="application/atom+xml">
     
@@ -109,7 +118,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">android学习4_表格布局和相对布局</div>
+        <div class="flex-col header-title ellipsis">android学习5_部分高级控件局</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -131,11 +140,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">android学习4_表格布局和相对布局</h1>
+        <h1 class="title">android学习5_部分高级控件局</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-03-29T01:06:22.000Z" itemprop="datePublished" class="page-time">
-  2017-03-29
+                <time datetime="2017-03-30T01:57:14.000Z" itemprop="datePublished" class="page-time">
+  2017-03-30
 </time>
 
 
@@ -153,17 +162,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#TableLayout类"><span class="post-toc-number">1.</span> <span class="post-toc-text">TableLayout类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#表格布局的常见属性"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">表格布局的常见属性</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Relativelayout类"><span class="post-toc-number">2.</span> <span class="post-toc-text">Relativelayout类</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#tip"><span class="post-toc-number">3.</span> <span class="post-toc-text">tip</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#图片控件"><span class="post-toc-number">1.</span> <span class="post-toc-text">图片控件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ImageView-图片视图"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">ImageView 图片视图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ImageButton"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">ImageButton</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ImageSwitcher"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">ImageSwitcher</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gallery"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">gallery</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
-<article id="post-android学习4_Tablelayout"
+<article id="post-android学习5_部分高级控件"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">android学习4_表格布局和相对布局</h1>
+        <h1 class="post-card-title">android学习5_部分高级控件局</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017年03月29日 9:06" datetime="2017-03-29T01:06:22.000Z"  itemprop="datePublished">2017-03-29</time>
+            <time class="post-time" title="2017年03月30日 9:57" datetime="2017-03-30T01:57:14.000Z"  itemprop="datePublished">2017-03-30</time>
 
             
 
@@ -178,34 +187,28 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="TableLayout类"><a href="#TableLayout类" class="headerlink" title="TableLayout类"></a>TableLayout类</h1><p>表格布局由TableLayout类控制，通过添加Tablerow来增加一行，每次增加一个空间相当于增加一列，空间的高度决定了每行的高度。</p>
-<h2 id="表格布局的常见属性"><a href="#表格布局的常见属性" class="headerlink" title="表格布局的常见属性"></a>表格布局的常见属性</h2><p>android:collapseColumns //隐藏指定的列<br>android:shrinkColumns //收缩指定的列以适应屏幕<br>android:stretchColumns //扩展指定的列填充屏幕<br>android:layout_column //指定列的序号<br>android:layout_span //指定空间跨越的列数</p>
-<h1 id="Relativelayout类"><a href="#Relativelayout类" class="headerlink" title="Relativelayout类"></a>Relativelayout类</h1><p>相对布局由RelativeLayout类控制，如果要使用相对布局的话需要为布局中的某一控件设置android:id=”@+id/xxx1”，然后根据这个控件进行布局，例如alignleft左对齐，leftto在其左边等等，根据需要进行布局</p>
-<h1 id="tip"><a href="#tip" class="headerlink" title="tip"></a>tip</h1><p>Layout_XX属性代表在整个父容器中的布局</p>
-<p>XX则代表某个控件中的布局</p>
-<p>例如</p>
-<pre><code>&lt;button
-android:text=&quot;123&quot;
-android:gravity=&quot;center&quot;
-/&gt;
-</code></pre><p>文字123在按钮中居中</p>
-<pre><code>&lt;button
-android:text=&quot;123&quot;
-android:layout_gravity=&quot;center&quot;
-/&gt;
-</code></pre><p>整个按钮在父容器中居中</p>
-
+            <h1 id="图片控件"><a href="#图片控件" class="headerlink" title="图片控件"></a>图片控件</h1><h2 id="ImageView-图片视图"><a href="#ImageView-图片视图" class="headerlink" title="ImageView 图片视图"></a>ImageView 图片视图</h2><p>用于显示图片，与Textview一样同属于View类<br>现将图片素材放入Drawable然后通过设置android:src=”@drawable/“</p>
+<pre><code>android:scaleTpye属性可以缩放图片
+=&quot;fitCenter&quot; 表示完全缩放
+=&quot;fitXY&quot;  表示完全适应imageview容器，不保持纵横比。
+=&quot;centerCrop&quot; 表示完全适应imageview容器，保持纵横比。
+</code></pre><h2 id="ImageButton"><a href="#ImageButton" class="headerlink" title="ImageButton"></a>ImageButton</h2><p>用于事件处理，按钮上显示的使图片</p>
+<p>使用background调用图片资源时，会自动缩放。</p>
+<p>并且可也在drawable资源中创建xml文件，选择sectors，设置按钮的状态时显示不同的资源</p>
+<p>设置控件透明度android:alpha=””</p>
+<p>设置图片背景透明android:background</p>
+<h2 id="ImageSwitcher"><a href="#ImageSwitcher" class="headerlink" title="ImageSwitcher"></a>ImageSwitcher</h2><h2 id="gallery"><a href="#gallery" class="headerlink" title="gallery"></a>gallery</h2>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-30T01:57:05.936Z" itemprop="dateUpdated">2017年3月30日 9:57</time>
+    最后更新时间：<time datetime="2017-03-30T12:06:48.265Z" itemprop="dateUpdated">2017年3月30日 20:06</time>
 </span><br>
 
 
-        By Pancheng：<a href="/2017/03/29/android学习4_Tablelayout/" target="_blank" rel="external">http://yoursite.com/2017/03/29/android学习4_Tablelayout/</a>
+        By Pancheng：<a href="/2017/03/30/android学习5_部分高级控件/" target="_blank" rel="external">http://yoursite.com/2017/03/30/android学习5_部分高级控件/</a>
     </div>
     <footer>
         <a href="http://yoursite.com">
@@ -234,7 +237,7 @@ android:layout_gravity=&quot;center&quot;
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&title=《android学习4_表格布局和相对布局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&title=《android学习5_部分高级控件局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -244,22 +247,22 @@ android:layout_gravity=&quot;center&quot;
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&title=《android学习4_表格布局和相对布局》 — Pancheng'Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&title=《android学习5_部分高级控件局》 — Pancheng'Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习4_Tablelayout/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/30/android学习5_部分高级控件/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习4_表格布局和相对布局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习5_部分高级控件局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -282,18 +285,18 @@ android:layout_gravity=&quot;center&quot;
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/03/30/android学习5_部分高级控件/" id="post-prev" class="post-nav-link">
+      <a href="/2017/03/31/沙箱在线分析/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">android学习5_部分高级控件局</h4>
+        <h4 class="title">[no title]</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/03/29/android学习3_Linearlayout/" id="post-next" class="post-nav-link">
+      <a href="/2017/03/29/android学习4_Tablelayout/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">android学习3_线性布局</h4>
+        <h4 class="title">android学习4_表格布局和相对布局</h4>
       </a>
     </div>
   
@@ -304,7 +307,7 @@ android:layout_gravity=&quot;center&quot;
     
 
 <div class="comments" id="comments">
-    <div class="ds-thread" data-thread-key="android学习4_Tablelayout" data-title="android学习4_表格布局和相对布局" data-url="http://yoursite.com/2017/03/29/android学习4_Tablelayout/"></div>
+    <div class="ds-thread" data-thread-key="android学习5_部分高级控件" data-title="android学习5_部分高级控件局" data-url="http://yoursite.com/2017/03/30/android学习5_部分高级控件/"></div>
 </div>
 <script>
 lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
@@ -382,7 +385,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&title=《android学习4_表格布局和相对布局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&title=《android学习5_部分高级控件局》 — Pancheng'Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -392,22 +395,22 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&title=《android学习4_表格布局和相对布局》 — Pancheng'Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&title=《android学习5_部分高级控件局》 — Pancheng'Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/29/android学习4_Tablelayout/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/03/30/android学习5_部分高级控件/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习4_表格布局和相对布局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《android学习5_部分高级控件局》 — Pancheng'Blog&url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/29/android学习4_Tablelayout/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/03/30/android学习5_部分高级控件/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -418,7 +421,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.14');
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/03/29/android学习4_Tablelayout/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/03/30/android学习5_部分高级控件/" alt="微信分享二维码">
 </div>
 
 
